@@ -1,0 +1,34 @@
+{
+    "students": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "age": 20,
+            "major": "Computer Science"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "age": 22,
+            "major": "Mathematics"
+        },
+        {
+            "id": 3,
+            "name": "Emily Johnson",
+            "age": 19,
+            "major": "Physics"
+        },
+        {
+            "id": 4,
+            "name": "Michael Brown",
+            "age": 21,
+            "major": "Chemistry"
+        },
+        {
+            "id": 5,
+            "name": "Jessica Davis",
+            "age": 23,
+            "major": "Biology"
+        }
+    ]
+}
