@@ -1,0 +1,64 @@
+<!-- This HTML file demonstrates a dynamic menu using Tailwind CSS and JavaScript. It includes a header with a static menu, a button to show a dynamic menu, and a mobile menu toggle. 
+ The dynamic menu is generated using JavaScript and styled with Tailwind CSS. -->
+<!-- The page is responsive and adapts to different screen sizes. 
+ The footer contains a copyright notice. 
+ The JavaScript file 'dynamic.js' is included at the end of the body for better performance. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Menu Extravaganza (Tailwind CSS)</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dynamic.css">
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <header class="bg-gradient-to-r from-indigo-600 to-purple-700 shadow-md py-6">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <a href="#" class="text-white text-2xl font-bold tracking-tight">
+                <span class="text-yellow-400">Dynamic</span> Menu <span class="text-green-400">Magic</span>
+            </a>
+            <nav id="static-nav" class="hidden md:flex space-x-6 text-white">
+                <a href="#" class="hover:text-gray-300">Home</a>
+                <a href="#" class="hover:text-gray-300">About</a>
+                <a href="#" class="hover:text-gray-300">Services</a>
+                <a href="#" class="bg-yellow-500 text-indigo-900 py-2 px-4 rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition duration-300 ease-in-out">Contact</a>
+            </nav>
+            <nav class="hidden md:flex space-x-6 text-white">
+                <button id="toggle-dynamic-menu" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-md font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300 ease-in-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    Show Dynamic Menu
+                </button>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white" title="Toggle Mobile Menu">
+                    <svg class="h-6 w-6 fill-current" viewBox="0:0 24 24">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden bg-gradient-to-r from-indigo-500 to-purple-600 py-4">
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="bg-white shadow-lg rounded-lg p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">The Power of Dynamic Menus!</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Dynamically generated menu, loaded and rendered using JavaScript.
+            </p>
+            <div id="dynamic-menu-container" class="mt-6">
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 text-center py-4 mt-8">
+        <p class="text-gray-600">&copy; 2025 Dynamic Menu</p>
+    </footer>
+
+    <script src="dynamic.js"></script>
+</body>
+</html>

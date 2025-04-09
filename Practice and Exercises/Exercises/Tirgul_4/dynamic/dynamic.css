@@ -1,0 +1,14 @@
+.dynamic-submenu {
+    display: none;
+    /* Add any specific styling for submenus */
+}
+
+.dynamic-menu-item.has-submenu:hover > .dynamic-submenu {
+    display: block; /* Or use a more sophisticated animation */
+}
+
+/* Example of a dramatic hover effect (can be done with Tailwind too) */
+.dynamic-menu-item a:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
